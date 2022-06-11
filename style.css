@@ -10,6 +10,46 @@ body{
   position: relative;
 }
 
+/*---Paragraph--*/
+
+p{
+  padding: 10px;
+}
+
+.p1{
+  background-color: blue;
+  height: 200px;
+}
+
+.intro{
+  color: #fff;
+  text-overflow: inherit;
+}
+
+button{
+  display: block;
+  height: 30px;
+  border: solid white 1px;
+  border-radius: 4px;
+  background-color: blue;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+button a:link, button a:visited, button a:hover{
+ color: white;
+ text-decoration: none;
+ font-size: 15px;
+ padding: 10px;
+}
+
+button a:hover{
+  text-decoration: none;
+  display: block;
+  background-color: #fff;
+  color: black;
+  
+}
 /*---Header---*/
 header{
   background-color: blue;
@@ -23,42 +63,14 @@ header{
   justify-content: center;
   align-items: flex-start;
   align-content: flex-start;
-  height:50vw;
-  min-height:400px;
-  max-height:550px;
-  min-width:300px;
-  color:#eee;
 }
-.header:after{
-  content:"";
-  width:100%;
-  height:100%;
-  position:absolute;
-  bottom:0;
-  left:0;
-  z-index:-1;
- background: linear-gradient(to bottom, rgba(0,0,0,0.12) 40%,rgba(27,32,48,1) 100%);
-}
-.header:before{
-  content:"";
-  width:100%;
-  height:200%;
-  position:absolute;
-  top:0;
-  left:0;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translateZ(0); backface-visibility: hidden;
-  scale(1.0, 1.0);
-    transform: translateZ(0);
-  background-size:100%;
-  background-attachment:fixed;
-  animation: grow 360s  linear 10ms infinite;
-  transition:all 0.4s ease-in-out;
-  z-index:-2
-}
+
 .header a{
   color:#eee
+  margin: 0;
+  padding: 20px;
 }
+
 
 /*---Links---*/
 .menu a:link, .menu a:visited{
