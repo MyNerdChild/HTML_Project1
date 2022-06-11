@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height:100%;
+}
+
+body{
+  position: relative;
+}
+
+/*---Header---*/
+header{
+  background-color: blue;
+}
+
+.header{
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  height:50vw;
+  min-height:400px;
+  max-height:550px;
+  min-width:300px;
+  color:#eee;
+}
+.header:after{
+  content:"";
+  width:100%;
+  height:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  z-index:-1;
+ background: linear-gradient(to bottom, rgba(0,0,0,0.12) 40%,rgba(27,32,48,1) 100%);
+}
+.header:before{
+  content:"";
+  width:100%;
+  height:200%;
+  position:absolute;
+  top:0;
+  left:0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0); backface-visibility: hidden;
+  scale(1.0, 1.0);
+    transform: translateZ(0);
+  background-size:100%;
+  background-attachment:fixed;
+  animation: grow 360s  linear 10ms infinite;
+  transition:all 0.4s ease-in-out;
+  z-index:-2
+}
+.header a{
+  color:#eee
+}
+
+/*---Links---*/
+.menu a:link, .menu a:visited{
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+}
+
+/*---Footer--*/
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+footer, .krysta, .krysta a:link, .krysta a:visited{
+  color: gray;
+  margin: center;
+  text-decoration: none;
+}
+
+.krysta a:hover{
+  color: blue;
+}
