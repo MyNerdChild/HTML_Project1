@@ -2,54 +2,13 @@
   margin: 0;
   padding: 0;
 }
+
 html, body {
   height:100%;
 }
 
-body{
-  position: relative;
-}
 
-/*---Paragraph--*/
 
-p{
-  padding: 10px;
-}
-
-.p1{
-  background-color: blue;
-  height: 200px;
-}
-
-.intro{
-  color: #fff;
-  text-overflow: inherit;
-}
-
-button{
-  display: block;
-  height: 30px;
-  border: solid white 1px;
-  border-radius: 4px;
-  background-color: blue;
-  margin-top: 40px;
-  margin-left: 40px;
-}
-
-button a:link, button a:visited, button a:hover{
- color: white;
- text-decoration: none;
- font-size: 15px;
- padding: 10px;
-}
-
-button a:hover{
-  text-decoration: none;
-  display: block;
-  background-color: #fff;
-  color: black;
-  
-}
 /*---Header---*/
 header{
   background-color: blue;
@@ -84,15 +43,14 @@ header{
 
 /*---Footer--*/
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+position: sticky;
 }
 footer, .krysta, .krysta a:link, .krysta a:visited{
   color: gray;
   margin: center;
   text-decoration: none;
+  font-family: monospace;
+  font-size: 13px;
 }
 
 .krysta a:hover{
